@@ -29,7 +29,7 @@ public class MappingExample {
 		System.out.println();
 		System.out.println("Employee");
 		
-		Employee.person().stream().flatMapToDouble(new Function<Employee, DoubleStream>(){
+		Employee.persons().stream().flatMapToDouble(new Function<Employee, DoubleStream>(){
 			@Override
 			public DoubleStream apply(Employee t) {
 				return DoubleStream.of(t.getIncome());
@@ -39,7 +39,7 @@ public class MappingExample {
 		System.out.println();
 		System.out.println("Employee");
 		
-		sum = Employee.person().stream().flatMapToDouble((t)-> DoubleStream.of(t.getIncome()))
+		sum = Employee.persons().stream().flatMapToDouble((t)-> DoubleStream.of(t.getIncome()))
 								.sum();
 		System.out.println("sum: " + sum);
 		

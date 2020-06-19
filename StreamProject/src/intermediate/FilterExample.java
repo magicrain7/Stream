@@ -5,7 +5,7 @@ import java.util.List;
 public class FilterExample {
 	public static void main(String[] args) {
 		// Filter: true 값만 걸러냄
-		List<Employee> employees = Employee.person(); 
+		List<Employee> employees = Employee.persons(); 
 		employees.stream()
 						.filter(( t) -> t.getIncome() > 3000 ) 
 						.filter(( t) -> t.isFemale())

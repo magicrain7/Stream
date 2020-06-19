@@ -80,11 +80,11 @@ public class Employee {
 		return str;
 	}
 
-	public static List<Employee> person() {
+	public static List<Employee> persons() {
 		Employee e1 = new Employee(1, "Hong", Gender.MALE, LocalDate.of(1991, Month.JANUARY, 3), 2343.0);
 		Employee e2 = new Employee(2, "Park", Gender.MALE, LocalDate.of(2001, Month.JULY, 14), 3323.0);
 		Employee e3 = new Employee(3, "Kim", Gender.FEMALE, LocalDate.of(1961, Month.OCTOBER, 25), 4543.0);
-		Employee e4 = new Employee(4, "Lee", Gender.FEMALE, LocalDate.of(2000, Month.AUGUST, 6), 7763.0);
+		Employee e4 = new Employee(4, "Hwang", Gender.FEMALE, LocalDate.of(2000, Month.AUGUST, 6), 7763.0);
 		Employee e5 = new Employee(5, "Choi", Gender.MALE, LocalDate.of(1995, Month.APRIL, 12), 2223.0);
 		Employee e6 = new Employee(6, "Ryu", Gender.MALE, LocalDate.of(1998, Month.NOVEMBER, 19), 1113.0);
 		return Arrays.asList(e1, e2, e3, e4, e5, e6);
